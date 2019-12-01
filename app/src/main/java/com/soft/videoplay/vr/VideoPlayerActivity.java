@@ -20,7 +20,7 @@ import tv.danmaku.ijk.media.player.IMediaPlayer;
  * hzqiujiadi ashqalcn@gmail.com
  */
 public class VideoPlayerActivity extends MD360PlayerActivity {
-
+    String url="https://video.gujianzhixiang.com:8091/81820180915/VR201809424/index.m3u8";
     private static final String TAG = "VideoPlayerActivity";
     private MediaPlayerWrapper mMediaPlayerWrapper = new MediaPlayerWrapper();
 
@@ -65,7 +65,7 @@ public class VideoPlayerActivity extends MD360PlayerActivity {
         mMediaPlayerWrapper.pause();
         mMediaPlayerWrapper.destroy();
         mMediaPlayerWrapper.init();
-        mMediaPlayerWrapper.openRemoteFile("http://v.youku.com/v_show/id_XMjcwMDg2NjMyNA==.html?refer=seo_operation.liuxiao.liux_00003303_3000_Qzu6ve_19042900");
+        mMediaPlayerWrapper.openRemoteFile(url);
         mMediaPlayerWrapper.prepare();
 
     }

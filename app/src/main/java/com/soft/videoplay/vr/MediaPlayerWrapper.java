@@ -32,6 +32,7 @@ public class MediaPlayerWrapper implements IMediaPlayer.OnPreparedListener {
     public void init(){
         mStatus = STATUS_IDLE;
         mPlayer = new IjkMediaPlayer();
+
         mPlayer.setOnPreparedListener(this);
         mPlayer.setOnInfoListener(new IMediaPlayer.OnInfoListener() {
             @Override
