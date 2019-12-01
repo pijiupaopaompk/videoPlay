@@ -55,16 +55,6 @@ public class VideoPlayerActivity extends MD360PlayerActivity {
             }
         });
 
-        Uri uri = getUri();
-        if (uri != null){
-            mMediaPlayerWrapper.openRemoteFile("");
-            mMediaPlayerWrapper.prepare();
-        }
-
-
-        mMediaPlayerWrapper.pause();
-        mMediaPlayerWrapper.destroy();
-        mMediaPlayerWrapper.init();
         mMediaPlayerWrapper.openRemoteFile(url);
         mMediaPlayerWrapper.prepare();
 
